@@ -4,15 +4,16 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Navbar()
 {
+  
     return ( 
         <nav className="nav">
-            <Link to="/" className="site-title">Spoti Sync</Link>
+            <Link to="/Dashboard" className="site-title">Spoti Sync</Link>
             <ul>
                 
                     <CustomLink to="/Dashboard">Dashboard</CustomLink>
                     <CustomLink to="/Search">Search</CustomLink>
                     <CustomLink to="/About">About</CustomLink>
-                    <CustomLink to="/CurrentUser">Logged in as</CustomLink>
+                    <CustomLink to="/ ">Logged in as</CustomLink>
             </ul>
         </nav>
     )
